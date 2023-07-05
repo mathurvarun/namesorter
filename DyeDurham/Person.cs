@@ -1,5 +1,5 @@
 ﻿
-public class Person
+public class Person : IComparable
 {
     public Person()
     {
@@ -26,5 +26,11 @@ public class Person
     {
         return FirstName + " " + LastName + Environment.NewLine;
     }
+
+    public int CompareTo(object? obj)
+    {
+        throw new NotImplementedException();
+    }
+
 }
 

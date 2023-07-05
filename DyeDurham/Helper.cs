@@ -95,6 +95,11 @@ namespace DyeDurham
                 fs.Close();
             }
         }
+
+        public static List<Person> GetSortedPersonList(List<Person> persons)
+        {
+            return persons.OrderBy(x => x.LastName).ThenBy(x => x.FirstName).ToList();
+        }
     }    
 }
 

@@ -1,5 +1,4 @@
-﻿
-using DyeDurham;
+﻿using DyeDurham;
 
 var inputFile = "unsorted-names-list.txt";
 if(args!=null && args[0] != null)
@@ -10,8 +9,8 @@ if(args!=null && args[0] != null)
 // Parse input file
 var persons = Helper.ParseInputFile(inputFile);
 
-// Sort by last name, first name
-persons = persons.OrderBy(x => x.LastName).ThenBy(x => x.FirstName).ToList();
+// Sort list
+persons = Helper.GetSortedPersonList(persons);
 
 // Generate sorted output file
 Helper.GenerateOutputFile(persons,true);
