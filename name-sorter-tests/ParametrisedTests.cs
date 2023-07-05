@@ -5,7 +5,7 @@ namespace name_sorter_tests;
 public class ParametrisedTests
 {
    
-    public static bool IsSortedCorrectly(Person a, Person b, Person c, Person d)
+    public bool IsSortedCorrectly(Person a, Person b, Person c, Person d)
     {
         var persons = new List<Person>();
         persons.Add(a);
@@ -19,7 +19,7 @@ public class ParametrisedTests
     }
 
     [Theory]
-    [MemberData(nameof(TestDataGenerator.GetPersonFromDataGenerator), MemberType = typeof(TestDataGenerator))]
+    [MemberData(nameof(TestPersonDataGenerator.GetPersonFromDataGenerator), MemberType = typeof(TestPersonDataGenerator))]
     public void AllPersons_AreSortedCorrectly_WithPersonData_FromDataGenerator(Person a, Person b, Person c, Person d)
     {
         Assert.True(IsSortedCorrectly(a,b,c,d));

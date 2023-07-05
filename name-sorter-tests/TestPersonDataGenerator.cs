@@ -2,7 +2,7 @@
 
 namespace name_sorter_tests;
 
-public class TestDataGenerator : IEnumerable<object[]>
+public class TestPersonDataGenerator
 {
     
 
@@ -26,13 +26,5 @@ public class TestDataGenerator : IEnumerable<object[]>
 
     }
 
-    public IEnumerator<object[]> GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
+   
 }

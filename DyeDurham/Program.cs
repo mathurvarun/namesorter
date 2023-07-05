@@ -1,7 +1,7 @@
 ﻿using DyeDurham;
 
-var inputFile = "unsorted-names-list.txt";
-if(args!=null && args[0] != null)
+var inputFile = "./unsorted-names-list.txt";
+if(args!=null && args.Any())
 {
     inputFile = args[0];
 }

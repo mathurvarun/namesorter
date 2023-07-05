@@ -43,7 +43,7 @@ namespace DyeDurham
         // Generate Output File
         public static void GenerateOutputFile(List<Person> persons, bool overwriteExistingFile = false, string outputFileName = "")
         {
-            var outputFile = "sorted-names-list.txt";
+            var outputFile = "./sorted-names-list.txt";
             if (!string.IsNullOrEmpty(outputFileName))
             {
                 outputFile = outputFileName;
